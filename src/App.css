@@ -32,4 +32,23 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+body {
+  background-color: palevioletred;
+  width: auto;
+  justify-content: center;
+  padding: 40px 50px;
+}
+.counter {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+.buttons {
+  display: flex;
+}
+.number {
+  background-color: palevioletred;
+  color: black;
+  font-size: 40px;
+  margin: auto;
+}

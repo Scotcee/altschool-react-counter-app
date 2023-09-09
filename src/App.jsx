@@ -26,51 +26,53 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="counter">
       <h1>Current Value:</h1>
-      <div> {count} </div>
-      <button
-        onClick={() => {
-          increaseCountByOne();
-        }}
-      >
-        Add by 1
-      </button>
-      <button
-        onClick={() => {
-          increaseCountByTen();
-        }}
-      >
-        Add by 10
-      </button>
-      <button
-        onClick={() => {
-          resetCount();
-        }}
-      >
-        Reset Count
-      </button>
-      <button
-        onClick={() => {
-          generateRandomNumber();
-        }}
-      >
-        Random Number
-      </button>
-      <button
-        onClick={() => {
-          reduceCountByTen();
-        }}
-      >
-        reduce by 10
-      </button>
-      <button
-        onClick={() => {
-          reduceCountByOne();
-        }}
-      >
-        Reduce by 1
-      </button>
+      <div className="number"> {count} </div>
+      <div className="buttons">
+        <button
+          onClick={() => {
+            increaseCountByOne();
+          }}
+        >
+          Add by 1
+        </button>
+        <button
+          onClick={() => {
+            increaseCountByTen();
+          }}
+        >
+          Add by 10
+        </button>
+        <button
+          onClick={() => {
+            resetCount();
+          }}
+        >
+          Reset Count
+        </button>
+        <button
+          onClick={() => {
+            generateRandomNumber();
+          }}
+        >
+          Random Number
+        </button>
+        <button
+          onClick={() => {
+            reduceCountByTen();
+          }}
+        >
+          reduce by 10
+        </button>
+        <button
+          onClick={() => {
+            reduceCountByOne();
+          }}
+        >
+          Reduce by 1
+        </button>
+      </div>
     </div>
   );
 }
